@@ -101,7 +101,7 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
             Map<String, Object> params = new HashMap<String, Object>();
             params.put("id", id);
             owner = this.namedParameterJdbcTemplate.queryForObject(
-                    "SELECT id, first_name, last_name, address, city, telephone FROM owners WHERE id= :id",
+                    "SELECT id, first_name, last_name, address,  telephone FROM owners WHERE id= :id",
                     params,
                     BeanPropertyRowMapper.newInstance(Owner.class)
             );
