@@ -76,13 +76,14 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
      * Loads {@link Owner Owners} from the data store by last name, returning all owners whose last name <i>starts</i> with
      * the given name; also loads the {@link Pet Pets} and {@link Visit Visits} for the corresponding owners, if not
      * already loaded.
+     City Added
      */
     @Override
     public Collection<Owner> findByLastName(String lastName) throws DataAccessException {
         Map<String, Object> params = new HashMap<String, Object>();
         params.put("lastName", lastName + "%");
         List<Owner> owners = this.namedParameterJdbcTemplate.query(
-                "SELECT id, first_name, last_name, address, city, telephone FROM owners WHERE last_name like :lastName",
+                "SELECT id, first_name, last_name, address, City, telephone FROM owners WHERE last_name like :lastName",
                 params,
                 BeanPropertyRowMapper.newInstance(Owner.class)
         );
