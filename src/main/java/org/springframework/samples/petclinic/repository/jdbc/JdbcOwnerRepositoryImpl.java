@@ -95,6 +95,7 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
     /**
      * Loads the {@link Owner} with the supplied <code>id</code>; also loads the {@link Pet Pets} and {@link Visit Visits}
      * for the corresponding owner, if not already loaded.
+	 * City added to table
      */
     @Override
     public Owner findById(int id) throws DataAccessException {
@@ -103,7 +104,7 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
             Map<String, Object> params = new HashMap<String, Object>();
             params.put("id", id);
             owner = this.namedParameterJdbcTemplate.queryForObject(
-                    "SELECT id, first_name, last_name, address, City, telephone FROM owners WHERE id= :id",
+                    "SELECT id, first_name, last_name, address,City , telephone FROM owners WHERE id= :id",
                     params,
                     BeanPropertyRowMapper.newInstance(Owner.class)
             );
