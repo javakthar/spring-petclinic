@@ -151,7 +151,7 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
     }
 
     /**
-     * Loads the {@link Pet} and {@link Visit} data for the supplied {@link List} of {@link Owner Owners}.
+     * Loads the {@link Pet} and {@link Visit} data for the supplied {@link List} JAK o f {@link Owner Owners}.
      *
      * @param owners the list of owners for whom the pet and visit data should be loaded
      * @see #loadPetsAndVisits(Owner)
