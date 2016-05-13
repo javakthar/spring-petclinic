@@ -37,6 +37,7 @@ import org.springframework.transaction.annotation.Transactional;
  * Also a placeholder for @Transactional and @Cacheable annotations
  *
  * @author Michael Isvy
+ Test done
  */
 @Service
 public class ClinicServiceImpl implements ClinicService {
