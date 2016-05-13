@@ -38,6 +38,7 @@ import org.springframework.transaction.annotation.Transactional;
  *
  * @author Michael Isvy
  Test done
+ Add comments
  */
 @Service
 public class ClinicServiceImpl implements ClinicService {
