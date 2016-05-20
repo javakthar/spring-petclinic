@@ -12,8 +12,9 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * Added few lines of code
- Lines added
+ *Added few lines of code
+ *Added the few lines of code
+
  */
 package org.springframework.samples.petclinic.model;
 
