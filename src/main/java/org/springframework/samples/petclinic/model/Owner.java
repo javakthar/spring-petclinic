@@ -51,7 +51,7 @@ public class Owner extends Person {
     @Column(name = "city")
     @NotEmpty
     private String city;
-    private String District;
+
 
     @Column(name = "telephone")
     @NotEmpty
