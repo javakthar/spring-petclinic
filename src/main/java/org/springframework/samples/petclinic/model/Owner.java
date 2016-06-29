@@ -12,6 +12,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ * added comments
  */
 package org.springframework.samples.petclinic.model;
 
@@ -51,8 +52,6 @@ public class Owner extends Person {
     @Column(name = "city")
     @NotEmpty
     private String city;
-
-
 
     @Column(name = "telephone")
     @NotEmpty
